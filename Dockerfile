@@ -5,6 +5,7 @@ COPY ./src /bot/src
 COPY ./package.json /bot/package.json
 COPY ./package-lock.json /bot/package-lock.json
 COPY ./tsconfig.json /bot/tsconfig.json
+COPY ./config /bot/config
 
 RUN apk update
 RUN apk add wget python3 build-base
